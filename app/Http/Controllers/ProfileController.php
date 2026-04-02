@@ -11,6 +11,20 @@ class ProfileController extends Controller
     public function index()
     {
         $profile = Profile::first();
+
+        // Auto-seed if profile is empty (to prevent error on first deployment)
+        if (!$profile) {
+            $profile = Profile::create([
+                'name' => 'Albertus Reno Aditama',
+                'age' => 19,
+                'birth_date' => '2006-11-15',
+                'school' => 'SMAK Frateran',
+                'class' => '12 E',
+                'description' => 'Seorang siswa SMAK Frateran kelas 12 E yang memiliki minat di bidang informatika dan gaming.',
+                'profile_image' => null,
+            ]);
+        }
+
         return view('home', compact('profile'));
     }
 
