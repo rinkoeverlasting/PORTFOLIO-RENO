@@ -57,9 +57,16 @@
 }
 
 @utility glassmorphism {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
+  background-color: rgba(15, 15, 15, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 1024px) {
+  @utility glassmorphism {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 @utility neon-border-blue {
@@ -195,9 +202,15 @@
 }
 
 .animated-bg-gradient {
-    background: linear-gradient(-45deg, #050505, #0a0a2e, #1a0a2e, #050505);
-    background-size: 400% 400%;
-    animation: gradient-shift 15s ease infinite;
+    background: #050505;
+}
+
+@media (min-width: 1024px) {
+    .animated-bg-gradient {
+        background: linear-gradient(-45deg, #050505, #0a0a2e, #1a0a2e, #050505);
+        background-size: 400% 400%;
+        animation: gradient-shift 15s ease infinite;
+    }
 }
 
 /* Page Loader */
@@ -233,19 +246,17 @@
 }
 
 .page-transition {
-    animation: page-reveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: page-reveal 0.8s ease-out forwards;
 }
 
 @keyframes page-reveal {
     from { 
         opacity: 0;
-        transform: translateY(40px) scale(0.98);
-        filter: blur(10px);
+        transform: translateY(20px);
     }
     to { 
         opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0);
+        transform: translateY(0);
     }
 }
 

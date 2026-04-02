@@ -27,7 +27,8 @@ class ProjectController extends Controller
         $data = $request->all();
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('projects', 'public');
+            $path = $request->file('image')->store('projects', 'public');
+            $data['image'] = $path;
         }
 
         Project::create($data);
