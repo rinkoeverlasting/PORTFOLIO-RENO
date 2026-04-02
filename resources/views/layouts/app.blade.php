@@ -145,16 +145,17 @@
         // Create Floating Particles
         function createParticles() {
             const container = document.getElementById('particles-container');
-            const particleCount = 20;
+            const isMobile = window.innerWidth < 768;
+            const particleCount = isMobile ? 8 : 15;
             
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
                 
-                const size = Math.random() * 4 + 1;
+                const size = Math.random() * 3 + 1;
                 const left = Math.random() * 100;
-                const duration = Math.random() * 15 + 10;
-                const delay = Math.random() * 20;
+                const duration = Math.random() * 10 + 10;
+                const delay = Math.random() * 15;
                 
                 particle.style.width = `${size}px`;
                 particle.style.height = `${size}px`;
