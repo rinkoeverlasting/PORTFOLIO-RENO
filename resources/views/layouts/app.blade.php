@@ -37,7 +37,7 @@
     <div id="particles-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
 
     <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-6">
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-6 glassmorphism-blur">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="{{ route('home') }}" class="text-3xl font-orbitron font-black neon-text-blue tracking-tighter hover:scale-105 transition-transform">
                 RENO<span class="text-neon-purple neon-text-purple">.</span>

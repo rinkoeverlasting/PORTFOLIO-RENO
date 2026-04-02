@@ -77,7 +77,7 @@
                 <!-- Hover Glow -->
                 <div class="absolute -inset-1 bg-gradient-to-r from-neon-blue to-neon-purple rounded-[2rem] blur opacity-0 group-hover:opacity-20 transition duration-500"></div>
                 
-                <div class="relative glassmorphism rounded-[2rem] overflow-hidden flex flex-col h-full border-white/5 group-hover:border-neon-blue/30 transition-all duration-500">
+                <div class="relative glassmorphism glassmorphism-blur rounded-[2rem] overflow-hidden flex flex-col h-full border-white/5 group-hover:border-neon-blue/30 transition-all duration-500">
                     <!-- Image Container -->
                     <div class="h-64 relative overflow-hidden bg-dark-card">
                         @if($project->image)

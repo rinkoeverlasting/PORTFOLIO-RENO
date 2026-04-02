@@ -32,7 +32,7 @@
             <!-- Animated Background behind profile -->
             <div class="absolute -inset-1 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             
-            <div class="relative glassmorphism p-8 md:p-16 rounded-[2rem] overflow-hidden">
+            <div class="relative glassmorphism glassmorphism-blur p-8 md:p-16 rounded-[2rem] overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-center gap-16">
                     <!-- Photo Side -->
                     <div class="flex flex-col items-center space-y-8">
